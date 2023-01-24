@@ -1,12 +1,12 @@
-const Home = () => {
+import { FC } from 'react';
+import styles from './page.module.css';
 
-    const name = "NEXT.JS";
-
+const Home: FC = () => {
     return (
-        <div>
-            <h1>Hello {name}</h1>
+        <div className={styles.main}>
+            <h1>Learning NEXT.JS 13!</h1>
         </div>
-    );
+    )
 };
 
 export default Home;
