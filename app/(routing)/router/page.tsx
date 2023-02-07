@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { FC } from 'react';
-import styles from '../page.module.css';
+import styles from '../../page.module.css';
 
 const page: FC = () => {
     return (
@@ -12,7 +12,7 @@ const page: FC = () => {
             </head>
 
             <div>
-                <h1>Router Page</h1>
+                <h1>Routing Group Page</h1>
             </div>
         </div>
     )
