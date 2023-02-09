@@ -1,12 +1,12 @@
 "use client";
 import { FC } from 'react';
-import styles from './page.module.css';
 import { Box, Button, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/navigation';
-import { contents } from '../content/post';
+import { posts } from '../Content/post';
 import Link from 'next/link';
+import styles from './page.module.css';
 
-type Content = {
+type Post = {
     id: string,
     title: string,
     date: string
@@ -26,11 +26,9 @@ const Home: FC = () => {
 
             <Box>
                 <Box>
-                    {contents.map(({ id, title, date }: Content) => (
+                    {posts.map(({ id, title, date }: Post, i) => (
                         <>
-                            <Link href={`/content/${id}`}>
-                                {title}
-                            </Link>
+                            <Link key='i' href={`/posts/${id}`}>{title}</Link>
                             <br />
                             <Text>
                                 {date}
