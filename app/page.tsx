@@ -1,6 +1,5 @@
 "use client";
 import { FC } from 'react';
-import { Box, Button, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/navigation';
 import { posts } from '../Content/post';
 import Link from 'next/link';
@@ -24,28 +23,26 @@ const Home: FC = () => {
                 </title>
             </head>
 
-            <Box>
-                <Box>
+            <div>
+                <div>
                     {posts.map(({ id, title, date }: Post, i) => (
                         <>
                             <Link key='i' href={`/posts/${id}`}>{title}</Link>
                             <br />
-                            <Text>
+                            <p>
                                 {date}
-                            </Text>
+                            </p>
                             <br />
                         </>
                     ))}
-                </Box>
+                </div>
 
-                <Button
-                    mt="4"
-                    colorScheme="blue"
-                    onClick={() => router.push("/data")}
+                <button className={styles.button}
+                    onClick={() => router.push("/posts")}
                 >
-                    Go To Blog
-                </Button>
-            </Box>
+                    Go To Posts
+                </button>
+            </div>
         </main>
     )
 };

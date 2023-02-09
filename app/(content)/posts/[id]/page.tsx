@@ -1,6 +1,4 @@
-"use client";
 import { posts } from "../../../../Content/post";
-import { Box, Heading, Text } from '@chakra-ui/react';
 
 async function getPost(id: string) {
     const post = posts.find((post) => post.id === id);
@@ -14,16 +12,16 @@ export default async function Post({ params }: { params: { id: string } }) {
     const post = await getPost(id);
 
     return (
-        <Box>
-            <Box>
-                <Heading>
+        <div>
+            <div>
+                <h1>
                     {post?.title}
-                </Heading>
+                </h1>
 
-                <Text>
+                <p>
                     {post?.date}
-                </Text>
-            </Box>
-        </Box>
+                </p>
+            </div>
+        </div>
     );
 };

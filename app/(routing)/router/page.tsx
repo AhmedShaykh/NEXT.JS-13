@@ -1,4 +1,3 @@
-"use client";
 import { FC } from 'react';
 import styles from '../../page.module.css';
 
@@ -12,7 +11,7 @@ const page: FC = () => {
             </head>
 
             <div>
-                <h1>Routing Group Page</h1>
+                <h3>Routing Group Page</h3>
             </div>
         </div>
     )

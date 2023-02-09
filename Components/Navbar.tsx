@@ -1,4 +1,3 @@
-"use client";
 import { FC } from 'react';
 import Link from "next/link";
 import styles from '../app/Navbar.module.css';
@@ -8,7 +7,6 @@ const Navbar: FC = () => {
         <div className={styles.navbar}>
             <div className={styles.links}>
                 <Link href="/" className={styles.link}>Home</Link>
-                <Link href="/data" className={styles.link}>Blog</Link>
                 <Link href="/router" className={styles.link}>Router</Link>
             </div>
         </div>
