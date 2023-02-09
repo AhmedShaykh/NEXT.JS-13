@@ -1,4 +1,14 @@
 import { posts } from "../../../../Content/post";
+import styles from '../../../page.module.css';
+
+export async function generateStaticParams() {
+    const ids: string[] = ["1", "2"];
+    return ids.map(id => (
+        {
+            id: id
+        }
+    ));
+};
 
 async function getPost(id: string) {
     const post = posts.find((post) => post.id === id);
@@ -12,16 +22,14 @@ export default async function Post({ params }: { params: { id: string } }) {
     const post = await getPost(id);
 
     return (
-        <div>
-            <div>
-                <h1>
-                    {post?.title}
-                </h1>
-
-                <p>
-                    {post?.date}
-                </p>
-            </div>
+        <div className={styles.main}>
+            <h3>
+                {post!.title}
+            </h3>
+            <br />
+            <p>
+                {post!.date}
+            </p>
         </div>
     );
 };

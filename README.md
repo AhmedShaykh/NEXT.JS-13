@@ -1,1 +1,1 @@
-# NEXT.JS 13 Beta Version!
+# Learning NEXT.JS 13!
