@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 async function getPost(id: string) {
     const post = posts.find((post) => post.id === id);
     return post;
-}
+};
 
 export default async function Post({ params }: { params: { id: string } }) {
 
