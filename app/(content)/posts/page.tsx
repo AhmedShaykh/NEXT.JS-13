@@ -3,20 +3,21 @@ import Link from 'next/link';
 import styles from '../../page.module.css';
 
 const Posts: FC = () => {
+
     return (
         <div className={styles.main}>
             <h3>
                 Posts Page
             </h3>
 
-            <Link href="/">
-                <p
-                    style={{ marginTop: "30px" }}
-                    className={styles.link}
+            <button style={{ marginTop: "1.5rem" }}>
+                <Link
+                    className={styles.button}
+                    href="/"
                 >
-                    Back To Home
-                </p>
-            </Link>
+                    Go To Home
+                </Link>
+            </button>
         </div>
     )
 };
