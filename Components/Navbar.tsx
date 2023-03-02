@@ -6,8 +6,15 @@ const Navbar: FC = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.links}>
-                <Link href="/" className={styles.link}>Home</Link>
-                <Link href="/router" className={styles.link}>Router</Link>
+                <Link href="/" className={styles.link}>
+                    Home
+                </Link>
+                <Link href="/router" className={styles.link}>
+                    Router
+                </Link>
+                <Link href="/products" className={styles.link}>
+                    Products
+                </Link>
             </div>
         </div>
     )
