@@ -12,9 +12,6 @@ const Navbar: FC = () => {
                 <Link href="/router" className={styles.link}>
                     Router
                 </Link>
-                <Link href="/products" className={styles.link}>
-                    Products
-                </Link>
             </div>
         </div>
     )

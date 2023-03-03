@@ -10,9 +10,9 @@ export default function Products({ params }: { params: { products: string } }) {
 
     const product = params.products;
 
-    if (!product) {
+    if (product !== product) {
         notFound();
-    }
+    };
 
     return (
         <div className={styles.main}>
