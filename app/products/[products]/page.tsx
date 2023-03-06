@@ -1,18 +1,16 @@
 import Link from "next/link";
-import { notFound } from 'next/navigation';
 import styles from '../../page.module.css';
 
 export const generateStaticParams = () => {
-    return [{ products: "iphone" }];
+    return [
+        { products: "iphone" },
+        { products: "mac" },
+    ];
 };
 
 export default function Products({ params }: { params: { products: string } }) {
 
     const product = params.products;
-
-    if (product !== product) {
-        notFound();
-    };
 
     return (
         <div className={styles.main}>
