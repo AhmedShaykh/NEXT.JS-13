@@ -10,12 +10,12 @@ export const generateStaticParams = () => {
 
 export default function Products({ params }: { params: { products: string } }) {
 
-    const product = params.products;
+    const { products } = params;
 
     return (
         <div className={styles.main}>
             <h3>
-                The Product Name is: {product}
+                The Product Name is: {products}
             </h3>
 
             <Link href="/">
