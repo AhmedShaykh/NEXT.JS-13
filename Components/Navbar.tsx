@@ -1,8 +1,7 @@
-import { FC } from 'react';
 import Link from "next/link";
 import styles from '../app/Navbar.module.css';
 
-const Navbar: FC = () => {
+const Navbar = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.links}>
@@ -11,6 +10,9 @@ const Navbar: FC = () => {
                 </Link>
                 <Link href="/router" className={styles.link}>
                     Router
+                </Link>
+                <Link href="/invokeapi" className={styles.link}>
+                    API
                 </Link>
             </div>
         </div>
