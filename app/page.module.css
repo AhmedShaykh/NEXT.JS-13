@@ -23,3 +23,13 @@
   color: black;
   cursor: pointer;
 }
+
+.heading {
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+.heading:hover {
+  cursor: pointer;
+  color: #0074de;
+}
