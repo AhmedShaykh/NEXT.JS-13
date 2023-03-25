@@ -33,3 +33,18 @@
   cursor: pointer;
   color: #0074de;
 }
+
+.contentDiv {
+  margin: 1rem 3rem;
+  padding: 1rem;
+}
+
+.content {
+  font-size: 1.25em;
+  padding: 10px 0;
+}
+
+.para {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}

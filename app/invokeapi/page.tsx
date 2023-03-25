@@ -12,13 +12,21 @@ const Posts: FC = () => {
             <br />
 
             <Link href="/invokeapi/server_static">
-                <h5 className={styles.heading}>1) Fetching Data Server Static</h5>
+                <h5 className={styles.heading}>
+                    1) Fetching Data Server Static
+                </h5>
             </Link>
+
             <Link href="/invokeapi/server_dynamic">
-                <h5 className={styles.heading}>2) Fetching Data Server Dynamic</h5>
+                <h5 className={styles.heading}>
+                    2) Fetching Data Server Dynamic
+                </h5>
             </Link>
+
             <Link href="/invokeapi/fetch_client">
-                <h5 className={styles.heading}>3) Fetching Data Client</h5>
+                <h5 className={styles.heading}>
+                    3) Fetching Data Client
+                </h5>
             </Link>
         </div>
     )
