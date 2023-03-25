@@ -4,7 +4,8 @@ import styles from '../../../page.module.css';
 
 async function getData() {
 
-    const res = await fetch('https://api.quotable.io/random?tags=technology');
+    const res = await fetch('https://api.quotable.io/random?tags=technology'
+        , { cache: 'no-store' });
 
     if (!res.ok) {
         throw new Error('Failed to fetch data');
