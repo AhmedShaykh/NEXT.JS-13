@@ -4,8 +4,10 @@ import styles from '../../../page.module.css';
 
 async function getData() {
 
-    const res = await fetch('https://api.quotable.io/random?tags=technology'
-        , { cache: 'no-store' });
+    const res = await fetch(
+        'https://api.quotable.io/random?tags=technology',
+        { cache: "no-store" }
+    );
 
     if (!res.ok) {
         throw new Error('Failed to fetch data');
@@ -24,7 +26,6 @@ const page = async () => {
 
             <div className={styles.contentDiv}>
                 <h2 className={styles.content}>Content:</h2>
-
                 <p className={styles.para}>
                     {quote.content}
                 </p>
