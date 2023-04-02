@@ -8,7 +8,6 @@ const Posts: FC = () => {
             <h3>
                 Invoking API's
             </h3>
-
             <br />
 
             <Link href="/invokeapi/static">
@@ -26,6 +25,18 @@ const Posts: FC = () => {
             <Link href="/invokeapi/client">
                 <h5 className={styles.heading}>
                     3) Fetching Data Client
+                </h5>
+            </Link>
+
+            <Link href="/invokeapi/parallel">
+                <h5 className={styles.heading}>
+                    4) Fetching Data Parallel Pattern
+                </h5>
+            </Link>
+
+            <Link href="/invokeapi/sequential ">
+                <h5 className={styles.heading}>
+                    5) Fetching Data Sequential Pattern
                 </h5>
             </Link>
         </div>
