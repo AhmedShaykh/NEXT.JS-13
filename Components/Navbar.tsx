@@ -8,9 +8,6 @@ const Navbar = () => {
                 <Link href="/" className={styles.link}>
                     Home
                 </Link>
-                <Link href="/router" className={styles.link}>
-                    Router
-                </Link>
                 <Link href="/invokeapi" className={styles.link}>
                     API
                 </Link>
