@@ -7,8 +7,8 @@ async function getData() {
     const res = await fetch(
         'https://api.quotable.io/random?tags=technology',
         { cache: "no-store" }
-        // { cache: "no-cache" } // Create Page In Build In Time If Any Change In Data It Then Change Content...
-        // { next: { revalidate: 10 } }
+        // { cache: "no-cache" } // Create Page In Build In Time If Any Change In Data Then Change Content...
+        // { next: { revalidate: 5 } } // Take Some Time To Store A Data In Seconds Then Store New Data...
     );
 
     if (!res.ok) {
