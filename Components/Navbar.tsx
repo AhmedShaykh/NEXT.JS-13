@@ -11,6 +11,9 @@ const Navbar = () => {
                 <Link href="/invokeapi" className={styles.link}>
                     API
                 </Link>
+                <Link href="/react" className={styles.link}>
+                    React
+                </Link>
             </div>
         </div>
     )
