@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from '../../page.module.css';
 
 export const generateStaticParams = () => {
+
     return [
         { products: "iphone" },
         { products: "mac" },

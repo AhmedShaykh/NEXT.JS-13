@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import styles from '../../page.module.css';
+import styles from '../page.module.css';
 
 const Posts: FC = () => {
 
