@@ -1,5 +1,5 @@
 "use client";
-import { FC } from 'react';
+import React from 'react';
 import { useRouter } from 'next/navigation';
 import { posts } from '../Content/post';
 import Link from 'next/link';
@@ -11,27 +11,25 @@ type Post = {
     date: string
 };
 
-const Home: FC = () => {
+const Home = () => {
 
     const router = useRouter();
 
     return (
         <main className={styles.main}>
-            <head>
-                <title>
-                    Next.JS 13 App
-                </title>
-            </head>
-
             <div>
                 <div>
-                    {posts.map(({ id, title, date }: Post, i) => (
+                    {posts.map(({ id, title, date }: Post) => (
                         <>
-                            <Link key='i' href={`/posts/${id}`}>{title}</Link>
+                            <Link key={id} href={`/posts/${id}`}>
+                                {title}
+                            </Link>
                             <br />
+
                             <p>
                                 {date}
                             </p>
+
                             <br />
                         </>
                     ))}

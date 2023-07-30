@@ -1,8 +1,7 @@
-import { FC } from 'react';
 import Link from 'next/link';
 import styles from '../page.module.css';
 
-const Posts: FC = () => {
+const Posts = () => {
     return (
         <div className={styles.main}>
             <h3>

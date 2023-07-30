@@ -5,7 +5,7 @@ export const generateStaticParams = () => {
 
     return [
         { products: "iphone" },
-        { products: "mac" },
+        { products: "macbook" },
     ];
 };
 
